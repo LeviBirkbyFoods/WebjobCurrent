@@ -1,0 +1,2 @@
+# WebjobCurrent
+Use this one
