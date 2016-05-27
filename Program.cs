@@ -39,10 +39,8 @@ namespace QueueOperations
 
         private static void CreateDemoData()
         {
-            //< add key = "constr" value = "DefaultEndpointsProtocol=https;AccountName=inovafiles;AccountKey=WTb35IQ6q7Y9zotwa/hNxniazYAhGU1l6EBWrxj6eqhNSgcNxtUoqcD51juyOY7kotihEv2dqbx5dKZNjhSgbg==" />
-            //< add key = "constrForDb" value = "Server=tcp:inovaregistry.database.windows.net,1433;Database=inovaregistry;User ID=powerbill@inovaregistry;Password=power@2016;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" />
 
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=inovafiles;AccountKey=WTb35IQ6q7Y9zotwa/hNxniazYAhGU1l6EBWrxj6eqhNSgcNxtUoqcD51juyOY7kotihEv2dqbx5dKZNjhSgbg=="; // AmbientConnectionStringProvider.Instance.GetConnectionString(ConnectionStringNames.Storage);
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=inovafiles;AccountKey=DIAf5tmIX05NzqK8kFEjbr1eU18Fk1AmzTmvolCu5iUnhdT73amRelFeNjUH+yp4z4Y60G1YA8B8wV6gHbl2bg=="; // AmbientConnectionStringProvider.Instance.GetConnectionString(ConnectionStringNames.Storage);
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
 
             CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
@@ -62,7 +60,7 @@ namespace QueueOperations
         private static void GetNextMessage()
         {
 
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=inovafiles;AccountKey=WTb35IQ6q7Y9zotwa/hNxniazYAhGU1l6EBWrxj6eqhNSgcNxtUoqcD51juyOY7kotihEv2dqbx5dKZNjhSgbg=="; // AmbientConnectionStringProvider.Instance.GetConnectionString(ConnectionStringNames.Storage);
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=inovafiles;AccountKey=DIAf5tmIX05NzqK8kFEjbr1eU18Fk1AmzTmvolCu5iUnhdT73amRelFeNjUH+yp4z4Y60G1YA8B8wV6gHbl2bg=="; // AmbientConnectionStringProvider.Instance.GetConnectionString(ConnectionStringNames.Storage);
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
 
             CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
